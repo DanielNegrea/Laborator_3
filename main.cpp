@@ -4,9 +4,13 @@ using namespace std;
 
 int main()
 {
-    for (int i = 10; i > 0; i--) {
-    cout << i << endl;
-}
-    cout << "Racheta lansata." << endl;
+    int a[20], i;
+    for (int i = 0; i < 20; i++) {
+    a[i] = i + 101;
+    }
+    for ( int i = 0; i < 20; i++) {
+    cout << a[i] << " " ;
+    }
+    cout << endl;
     return 0;
 }
