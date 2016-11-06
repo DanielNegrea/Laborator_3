@@ -4,12 +4,19 @@ using namespace std;
 
 int main()
 {
-    int a[20], i;
-    for (int i = 0; i < 20; i++) {
-    a[i] = 19 - i;
+    int a[20],nr, i;
+    cout << "Numarul de elemente din sirul a (maximum 20) : ";
+    cin >> nr;
+    for (i = 0; i < nr; i++) {
+    cout << "a[" << i << "] = ";
+        cin >> a[i];
     }
-    for ( int i = 0; i < 20; i++) {
-    cout << a[i] << " " ;
+    for (i = 0; i < nr; i++) {
+        if(a[i] < 0)
+            a[i] = -a[i];
+    }
+    for (i = 0; i < nr; i++) {
+        cout << a[i] << ", ";
     }
     cout << endl;
     return 0;
